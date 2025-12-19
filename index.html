@@ -1,34 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My firs site</title>
+    <title>BEM-example</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <h1>Crazy Frog</h1>
-    </header>
-
-    <main>
-      <p>First string</p>
-      <p>Second string</p>
-      <p>Third string</p>
-      <img src="images/Crazy_Frog.jpg" alt="Crazy Frog" width="200" height="200"/>
-      <p>
-        <a href="https://www.google.com" target="_blank"
-        >Тут можно найти все что угодно про Crazy Frog
-      </a>
-      </p>
-    </main>
-
-    <footer>
-      <ul>
-        <li>Описание</li>
-        <li>О компании</li>
-        <li>Контакты</li>
-      </ul>
-    </footer>
-
+    <div class="wrapper">
+      <div class="started"> <!-- left side -->
+        <h3 class="title started__title">Get Started With Your Free Trial</h3>
+        <p class="text started__text">Explore yoga at our serene studio with a complimentary session. Meet our instructors and discover the benefits</p>
+        <button class="started__btn">GetStarted Today</button>
+      </div>
+      <div class="learn-more"> <!-- right side -->
+        <img class="learn-more__img" src="/img/material-symbols_spa.png" alt="">
+        <h3 class="title learn-more__title">Spa area</h3>
+        <p class="text learn-more__text">Indulge in a world of relaxation and rejuvenation with our exceptional spa services. At our LA center</p>
+        <button class="learn-more__btn">Learn More</button>
+      </div>
+    </div>
   </body>
 </html>
