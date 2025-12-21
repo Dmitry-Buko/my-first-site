@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cards__wrapper{
+  margin: 0 auto;
+}
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: 
+  "header header header"
+  "sidebar content content"
+  "footer footer footer";
+  gap: 10px;
+}
+.cards__header{
+  grid-area: header;
+  background-color: aquamarine;
+}
+.cards__sidebar{
+  grid-area: sidebar;
+  background-color: rgb(170, 103, 233);
+}
+.cards__content{
+  grid-area: content;
+  background-color: #f44444;
+}
+.cards__footer{
+  grid-area: footer;
+  background-color: #85f38f;
+}
