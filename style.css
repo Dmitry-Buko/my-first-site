@@ -3,38 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: 'Noto Sans', sans-serif;
-}
-/* цвет и размер написан только для визуального понимания */
-.benefits__wrapper{
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.fixed-size{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
 
-  background-color: rgb(174, 254, 227);
+  margin-bottom: 50px;
 }
-.benefits__container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1440px;
-  background-color: #fff;
+.fixed-size__card{
+  background-color: bisque;
+  height: 100px;
 }
-.item{
-  flex: 1 1 20%;
-  padding: 30px 50px;
-  border: 1px solid #EBEBF0;
-  font-weight: 400;
-  font-size: 16px;
-  color: #292D33;
+.resizable{
+  display: grid;
+  grid-template-columns: 300px auto 300px;
+  gap: 10px;
 }
-.item__img{
-  margin-bottom: 15px;
-}
-.item__text{
-  max-width: 188px;
-  line-height: 1.6;
+.resizable__card{
+  background-color: blueviolet;
+  height: 100px;
 }
