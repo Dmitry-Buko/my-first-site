@@ -3,23 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
-.fixed-size{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-
-  margin-bottom: 50px;
+.cards__wrapper{
+  margin: 0 auto;
 }
-.fixed-size__card{
-  background-color: bisque;
-  height: 100px;
-}
-.resizable{
+.cards{
   display: grid;
-  grid-template-columns: 300px auto 300px;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: 
+  "header header header"
+  "sidebar content content"
+  "footer footer footer";
   gap: 10px;
 }
-.resizable__card{
-  background-color: blueviolet;
-  height: 100px;
+.cards__header{
+  grid-area: header;
+  background-color: aquamarine;
+}
+.cards__sidebar{
+  grid-area: sidebar;
+  background-color: rgb(170, 103, 233);
+}
+.cards__content{
+  grid-area: content;
+  background-color: #f44444;
+}
+.cards__footer{
+  grid-area: footer;
+  background-color: #85f38f;
 }
