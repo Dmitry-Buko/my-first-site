@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BEM-example</title>
+    <title>GRID exercise 4</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="cards__wrapper">
-        <div class="cards">
-          <div class="cards__header">
-            <p>header</p>
-          </div>
-          <div class="cards__sidebar">
-            <p>sidebar</p>
-          </div>
-          <div class="cards__content">
-            <p>content</p>
-          </div>
-          <div class="cards__footer">
-            <p>footer</p>
-          </div>
+    <div class="plans"><!--фон-->
+      <div class="plans__container">
+              <header class="plans__header"><!--шапка верх-->
+                <h1 class="plans__title">Choose Your Plan, Elevate Your Service!</h1>
+                <p class="plans__text">
+                  Find the perfect plan for your needs—unlock priority service, exclusive perks, and top-quality solutions at the best value!
+                </p>
+              </header>
+        <div class="plans__list">
+
+              <div class="plan-card plan-card--basic"><!--Basic Plan-->
+                <h3 class="plan-card__title">Basic Plan</h3>
+                <p class="plan-card__text">
+                  Upgrade to a higher level of service with faster response times, expert craftsmanship, and exclusive perks. Enjoy discounts on materials and labor, extended warranties, and dedicated support 
+                </p>
+              </div>
+
+              <div class="plan-card plan-card--pro"><!--Pro Plan-->
+                <h3 class="plan-card__title">Pro Plan</h3>
+                <p class="plan-card__text">
+                  Upgrade to a higher level of service with faster response times, expert craftsmanship, and exclusive perks. Enjoy discounts on materials and labor, extended warranties, and dedicated support 
+                </p>
+              </div>
+
+              <div class="plan-card plan-card--premium"><!--Premium Plan-->
+                <h3 class="plan-card__title">Premium Plan</h3>
+                <p class="plan-card__text">
+                  Perfect for startups and small businesses, this plan provides essential consulting services to establish a strong foundation, optimize operations, and drive initial growth. Get expert insights at an affordable price.
+                </p>
+              </div>
         </div>
+      </div>
     </div>
   </body>
 </html>
