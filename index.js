@@ -1,7 +1,17 @@
-function theSame(...str) { //"кот"  ["о", 'к', "т"]  ["окт"]
-  const arr = str.map(item => item.split("").sort().join(""));
-  const b = arr[0]//"окт"
-  return arr.some(item => item === b)
-}
+const obj = [
+  { name: "Pasha", age: 25 },
+  { name: "Sasha", age: 30 },
+  { name: "Masha", age: 27 },
+];
 
-console.log(theSame("кот", "тк", "кто")); // true
+const json = JSON.stringify(obj);
+const func = (json) => {
+  const parse = JSON.parse(json);
+
+  return parse.reduce((acc, item) => {
+    acc.push(Object.values(item));
+    return acc;
+  }, []);
+};
+
+console.log(func(json));
