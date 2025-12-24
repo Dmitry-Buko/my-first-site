@@ -4,50 +4,80 @@
   box-sizing: border-box;
 }
 body{
-  /* position: relative; */
-  font-family: 'Times New Roman', Times, serif;
-  color: black;
-  font-size: 16px;
+  font-family: 'Inter Tight', sans-serif;
+  color: rgb(0, 0, 0);
+
 }
-.wrapper{
-  height: 2000px;
-}
-.header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  height: 100px;
-  margin: 300px;
-  background-color: bisque;
-}
-.header__title{
-  text-align: center;
-}
-.btn{
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
+.container{
+  max-width: 1376px;
+  min-height: 100vh;
+  padding: 31px 32px;
+  margin: 32px auto;
+  border-radius: 12px;
+  background-color: rgba(7, 7, 7, 1);
 }
 
-.image-wrapper{
-  position: absolute;
-  display: inline-block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.image{
-  display: block;
+
+.header{
   position: relative;
-  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px;
+  margin: 0 auto;
+
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 76px;
 }
-.image-wrapper::before{
-  content: "";
+.header__logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.header__nav{
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  width: 100%;
-  height: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.header__logo-text{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+.header__menu{
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  list-style-type: none;
+}
+.header__menu-item{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+.header__btn{
+  padding: 12px 10px;
+  background-color: rgba(245, 245, 245, 1);
+  border: none;
+  border-radius: 72px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.header__menu-link{
+  text-decoration: none;
+  color: rgba(7, 7, 7, 1);
+}
+
+.header__menu-item:hover{
+  text-decoration: underline;
+}
+.header__btn:hover{
+  background-color: rgb(210, 210, 210);
 }
