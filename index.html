@@ -1,34 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My firs site</title>
+    <title>GRID exercise 4</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <h1>Crazy Frog</h1>
-    </header>
+    <div class="plans">
+      <div class="plans__container">
+              <div class="plans__header">
+                <h1 class="plans__title">Choose Your Plan, Elevate Your Service!</h1>
+                <p class="plans__text">
+                  Find the perfect plan for your needs—unlock priority service, exclusive perks, and top-quality solutions at the best value!
+                </p>
+              </div>
+        <div class="plans__list">
 
-    <main>
-      <p>First string</p>
-      <p>Second string</p>
-      <p>Third string</p>
-      <img src="images/Crazy_Frog.jpg" alt="Crazy Frog" width="200" height="200"/>
-      <p>
-        <a href="https://www.google.com" target="_blank"
-        >Тут можно найти все что угодно про Crazy Frog
-      </a>
-      </p>
-    </main>
+              <div class="plan-card plan-card--basic"><!--Basic Plan-->
+                <h3 class="plan-card__title">Basic Plan</h3>
+                <p class="plan-card__text">
+                  Upgrade to a higher level of service with faster response times, expert craftsmanship, and exclusive perks. Enjoy discounts on materials and labor, extended warranties, and dedicated support 
+                </p>
+              </div>
 
-    <footer>
-      <ul>
-        <li>Описание</li>
-        <li>О компании</li>
-        <li>Контакты</li>
-      </ul>
-    </footer>
+              <div class="plan-card plan-card--pro"><!--Pro Plan-->
+                <h3 class="plan-card__title">Pro Plan</h3>
+                <p class="plan-card__text">
+                  Upgrade to a higher level of service with faster response times, expert craftsmanship, and exclusive perks. Enjoy discounts on materials and labor, extended warranties, and dedicated support 
+                </p>
+              </div>
 
+              <div class="plan-card plan-card--premium"><!--Premium Plan-->
+                <h3 class="plan-card__title">Premium Plan</h3>
+                <p class="plan-card__text">
+                  Perfect for startups and small businesses, this plan provides essential consulting services to establish a strong foundation, optimize operations, and drive initial growth. Get expert insights at an affordable price.
+                </p>
+              </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
