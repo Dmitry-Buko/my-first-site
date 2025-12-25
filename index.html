@@ -1,34 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My firs site</title>
+    <title>BEM-example</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <h1>Crazy Frog</h1>
-    </header>
-
-    <main>
-      <p>First string</p>
-      <p>Second string</p>
-      <p>Third string</p>
-      <img src="images/Crazy_Frog.jpg" alt="Crazy Frog" width="200" height="200"/>
-      <p>
-        <a href="https://www.google.com" target="_blank"
-        >Тут можно найти все что угодно про Crazy Frog
-      </a>
-      </p>
-    </main>
-
-    <footer>
-      <ul>
-        <li>Описание</li>
-        <li>О компании</li>
-        <li>Контакты</li>
-      </ul>
-    </footer>
-
+    <div class="benefits__wrapper">
+      <div class="benefits__container">
+        <div class="item">
+          <img src="img/Frame 36.png" alt="icon1" class="item__img">
+          <p class="item__text">Непрерывная работа c 2017 года</p>
+        </div>
+        <div class="item">
+          <img src="img/Frame 34.png" alt="icon2" class="item__img">
+          <p class="item__text">Вся продукция сертифицирована</p>
+        </div>
+        <div class="item">
+          <img src="img/Frame 33.png" alt="icon3" class="item__img">
+          <p class="item__text">Контроль качества на всех этапах</p>
+        </div>
+        <div class="item">
+          <img src="img/Frame 35.png" alt="icon4" class="item__img">
+          <p class="item__text">Возможны поставки по всей России</p>
+        </div>
+        <div class="item">
+          <img src="img/Frame 37.png" alt="icon5" class="item__img">
+          <p class="item__text">Оперативное производство</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
