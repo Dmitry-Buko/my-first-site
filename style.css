@@ -10,15 +10,16 @@ body{
   color: #fff;
 }
 .plans{
-  width: 100%;
-  min-height: 100vh;
+  /* width: 100%;
+  min-height: 100vh; */
   background-color: #070707;
   padding-top: 82px;
+  padding-bottom: 82px;
 }
 .plans__container{
   margin: 0 auto;
   max-width: 1150px;
-  padding: 15px;
+  padding: 0 15px;
 }
 .plans__header{
   max-width: 639px;
