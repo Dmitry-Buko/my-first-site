@@ -4,65 +4,19 @@
   box-sizing: border-box;
 }
 body{
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
+  margin: 0;
+  padding: 0;
 }
-.plans{
-  /* width: 100%;
-  min-height: 100vh; */
-  background-color: #070707;
-  padding-top: 82px;
-  padding-bottom: 82px;
+.background{
+  background-image: url(https://png.pngtree.com/background/20250103/original/pngtree-stunning-red-and-blue-smoke-images-for-download-picture-image_15765429.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
 }
-.plans__container{
-  margin: 0 auto;
-  max-width: 1150px;
-  padding: 0 15px;
+.wrapper{
+  height: 2000px;
 }
-.plans__header{
-  max-width: 639px;
-  margin: 0 auto 60px;
-}
-.plans__title{
-  margin-bottom: 14px;
-  font-weight: 600;
-  text-align: center;
-  font-size: 48px;
-  line-height: 56px;
-}
-.plans__text{
-  max-width: 515px;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.plans__list{
-  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  gap: 24px;
-}
-.plan-card{
-  background-color: rgba(255, 255, 255, 0.22);
-  border: 1px solid #FFFFFF;
-  border-radius: 12px;
-  padding: 24px;
-}
-.plan-card__title{
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 40px;
-  margin-bottom: 12px;
-}
-.plan-card__text{
-  line-height: 1.5;
-}
-
-.plan-card--premium{
-  grid-column: 1/-1;
-  background-color: #F5AA21;
-  color: rgba(7, 7, 7, 1);
+.imagine{
+  margin: 20px auto;
 }

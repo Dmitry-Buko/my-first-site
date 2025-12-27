@@ -1,46 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GRID exercise 4</title>
+    <title>Images 1</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="plans">
-      <div class="plans__container">
-              <div class="plans__header">
-                <h1 class="plans__title">Choose Your Plan, Elevate Your Service!</h1>
-                <p class="plans__text">
-                  Find the perfect plan for your needs—unlock priority service, exclusive perks, and top-quality solutions at the best value!
-                </p>
-              </div>
-        <div class="plans__list">
-
-              <div class="plan-card plan-card--basic"><!--Basic Plan-->
-                <h3 class="plan-card__title">Basic Plan</h3>
-                <p class="plan-card__text">
-                  Upgrade to a higher level of service with faster response times, expert craftsmanship, and exclusive perks. Enjoy discounts on materials and labor, extended warranties, and dedicated support 
-                </p>
-              </div>
-
-              <div class="plan-card plan-card--pro"><!--Pro Plan-->
-                <h3 class="plan-card__title">Pro Plan</h3>
-                <p class="plan-card__text">
-                  Upgrade to a higher level of service with faster response times, expert craftsmanship, and exclusive perks. Enjoy discounts on materials and labor, extended warranties, and dedicated support 
-                </p>
-              </div>
-
-              <div class="plan-card plan-card--premium"><!--Premium Plan-->
-                <h3 class="plan-card__title">Premium Plan</h3>
-                <p class="plan-card__text">
-                  Perfect for startups and small businesses, this plan provides essential consulting services to establish a strong foundation, optimize operations, and drive initial growth. Get expert insights at an affordable price.
-                </p>
-              </div>
-        </div>
-      </div>
+    <div class="background"></div>
+    <figure>
+      <picture>
+        <source media="(min-width: 701px)" srcset="img/img_1400px.jpg" type="image/jpeg"/>
+        <source media="(max-width: 700px)" srcset="img/img_700px.jpg" type="image/jpeg"/>
+        <img src="img/img__orig.jpg" alt="Могучий лев!" loading="lazy" />
+      </picture>
+      <figcaption>Могучий лев в природе. Автор: National Geographic</figcaption>
+    </figure>
+    <div class="wrapper">Этот блок для проверки ленивой загрузки</div>
+    <div class="imagine">
+      <img src="img/images.jpeg" alt="Planet Earth" loading="lazy" />
     </div>
   </body>
 </html>
