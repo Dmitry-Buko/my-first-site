@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.background{
+  background-image: url(https://png.pngtree.com/background/20250103/original/pngtree-stunning-red-and-blue-smoke-images-for-download-picture-image_15765429.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper{
+  height: 2000px;
+}
+.imagine{
+  margin: 20px auto;
+}

@@ -1,34 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My firs site</title>
+    <title>Images 1</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Crazy Frog</h1>
-    </header>
-
-    <main>
-      <p>First string</p>
-      <p>Second string</p>
-      <p>Third string</p>
-      <img src="images/Crazy_Frog.jpg" alt="Crazy Frog" width="200" height="200"/>
-      <p>
-        <a href="https://www.google.com" target="_blank"
-        >Тут можно найти все что угодно про Crazy Frog
-      </a>
-      </p>
-    </main>
-
-    <footer>
-      <ul>
-        <li>Описание</li>
-        <li>О компании</li>
-        <li>Контакты</li>
-      </ul>
-    </footer>
-
+    <div class="background"></div>
+    <figure>
+      <picture>
+        <source media="(min-width: 701px)" srcset="img/img_1400px.jpg" type="image/jpeg"/>
+        <source media="(max-width: 700px)" srcset="img/img_700px.jpg" type="image/jpeg"/>
+        <img src="img/img__orig.jpg" alt="Могучий лев!" loading="lazy" />
+      </picture>
+      <figcaption>Могучий лев в природе. Автор: National Geographic</figcaption>
+    </figure>
+    <div class="wrapper">Этот блок для проверки ленивой загрузки</div>
+    <div class="imagine">
+      <img src="img/images.jpeg" alt="Planet Earth" loading="lazy" />
+    </div>
   </body>
 </html>
