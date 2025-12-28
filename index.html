@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Images 1</title>
+    <title>Images 2</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="background"></div>
-    <figure>
-      <picture>
-        <source media="(min-width: 701px)" srcset="img/img_1400px.jpg" type="image/jpeg"/>
-        <source media="(max-width: 700px)" srcset="img/img_700px.jpg" type="image/jpeg"/>
-        <img src="img/img__orig.jpg" alt="Могучий лев!" loading="lazy" />
-      </picture>
-      <figcaption>Могучий лев в природе. Автор: National Geographic</figcaption>
-    </figure>
-    <div class="wrapper">Этот блок для проверки ленивой загрузки</div>
-    <div class="imagine">
-      <img src="img/images.jpeg" alt="Planet Earth" loading="lazy" />
+    <div class="wrapper-content">
+      <div class="card">
+        <div class="card__image">
+          <img src="img/img1.png" alt="Gray waves" loading="lazy" />
+          <div class="social-media">
+            <a href="#"><img src="img/Icon1.png" alt="Facebook" /></a>
+            <a href="#"><img src="img/Icon2.png" alt="Twitter" /></a>
+            <a href="#"><img src="img/Icon3.png" alt="LinkedIn" /></a>
+            <a href="#"><img src="img/Icon4.png" alt="Instagram" /></a>
+          </div>
+        </div>
+        <h3 class="card__title">Ignacio Lang</h3>
+        <p class="card__description">Founder & Lead Mechanic</p>
+      </div>
+
+      <div class="card">
+        <div class="card__image">
+          <img src="img/img2.png" alt="Purple triangles" loading="lazy" />
+        </div>
+        <h3 class="card__title">David Miller</h3>
+        <p class="card__description">Senior Technician</p>
+      </div>
+
+      <div class="card">
+        <div class="card__image">
+          <img src="img/img3.png" alt="Gray waves" loading="lazy" />
+        </div>
+        <h3 class="card__title">Sarah Johnson</h3>
+        <p class="card__description">Customer Service Manager</p>
+      </div>
     </div>
   </body>
 </html>
