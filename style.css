@@ -6,15 +6,14 @@
 body{
   font-family: 'Inter Tight', sans-serif;
   color: rgb(0, 0, 0);
-
+  background-color: rgba(7, 7, 7, 1);
 }
 .container{
   max-width: 1376px;
   min-height: 100vh;
   padding: 31px 32px;
   margin: 32px auto;
-  border-radius: 12px;
-  background-color: rgba(7, 7, 7, 1);
+  /*border-radius: 12px; */
 }
 
 
@@ -38,11 +37,11 @@ body{
   align-items: center;
   gap: 8px;
 }
-.header__nav{
+/* .header__nav{
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-}
+} */
 .header__logo-text{
   font-weight: 500;
   font-size: 24px;
@@ -54,11 +53,12 @@ body{
   gap: 32px;
   list-style-type: none;
 }
-.header__menu-item{
+/* .header__menu-item{
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-}
+  стили перенесены в .header__menu-link
+} */
 .header__btn{
   padding: 12px 10px;
   background-color: rgba(245, 245, 245, 1);
@@ -73,6 +73,10 @@ body{
 .header__menu-link{
   text-decoration: none;
   color: rgba(7, 7, 7, 1);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .header__menu-item:hover{
