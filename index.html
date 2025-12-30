@@ -13,35 +13,58 @@
     />
   </head>
   <body>
-    <div class="wrapper-content">
-      <div class="card">
-        <div class="card__image">
-          <img src="img/img1.png" alt="Gray waves" loading="lazy" />
-          <div class="social-media">
-            <a href="#"><img src="img/Icon1.png" alt="Facebook" /></a>
-            <a href="#"><img src="img/Icon2.png" alt="Twitter" /></a>
-            <a href="#"><img src="img/Icon3.png" alt="LinkedIn" /></a>
-            <a href="#"><img src="img/Icon4.png" alt="Instagram" /></a>
+    <div class="cards">
+      <div class="container">
+        <div class="card">
+          <div class="card__wrapper-image"><!--1-->
+            <img
+              class="card__img"
+              src="img/img1.png"
+              alt="Gray waves"
+              loading="lazy"
+            />
+            <div class="card__social-media">
+              <a class="card__link" href="#"
+                ><img class="card__icon" src="img/icon1.svg" alt="Facebook"
+              /></a>
+              <a class="card__link" href="#"
+                ><img class="card__icon" src="img/icon2.svg" alt="Twitter"
+              /></a>
+              <a class="card__link" href="#"
+                ><img class="card__icon" src="img/icon3.svg" alt="LinkedIn"
+              /></a>
+              <a class="card__link" href="#"
+                ><img class="card__icon" src="img/icon4.svg" alt="Instagram"
+              /></a>
+            </div>
           </div>
+          <h3 class="card__title">Ignacio Lang</h3>
+          <p class="card__description">Founder & Lead Mechanic</p>
         </div>
-        <h3 class="card__title">Ignacio Lang</h3>
-        <p class="card__description">Founder & Lead Mechanic</p>
-      </div>
-
-      <div class="card">
-        <div class="card__image">
-          <img src="img/img2.png" alt="Purple triangles" loading="lazy" />
+        <div class="card"><!--2-->
+          <div class="card__wrapper-image">
+            <img
+              class="card__img"
+              src="img/img2.png"
+              alt="Purple triangles"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="card__title">David Miller</h3>
+          <p class="card__description">Senior Technician</p>
         </div>
-        <h3 class="card__title">David Miller</h3>
-        <p class="card__description">Senior Technician</p>
-      </div>
-
-      <div class="card">
-        <div class="card__image">
-          <img src="img/img3.png" alt="Gray waves" loading="lazy" />
+        <div class="card"><!--3-->
+          <div class="card__wrapper-image">
+            <img
+              class="card__img"
+              src="img/img3.png"
+              alt="Gray waves"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="card__title">Sarah Johnson</h3>
+          <p class="card__description">Customer Service Manager</p>
         </div>
-        <h3 class="card__title">Sarah Johnson</h3>
-        <p class="card__description">Customer Service Manager</p>
       </div>
     </div>
   </body>
