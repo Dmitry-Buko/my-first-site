@@ -1,34 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <title>Images 2</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My firs site</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>Crazy Frog</h1>
-    </header>
-
-    <main>
-      <p>First string</p>
-      <p>Second string</p>
-      <p>Third string</p>
-      <img src="images/Crazy_Frog.jpg" alt="Crazy Frog" width="200" height="200"/>
-      <p>
-        <a href="https://www.google.com" target="_blank"
-        >Тут можно найти все что угодно про Crazy Frog
-      </a>
-      </p>
-    </main>
-
-    <footer>
-      <ul>
-        <li>Описание</li>
-        <li>О компании</li>
-        <li>Контакты</li>
-      </ul>
-    </footer>
-
+    <div class="cards">
+      <div class="container">
+        <div class="card">
+          <div class="card__wrapper-image"><!--1-->
+            <img
+              class="card__img"
+              src="img/img1.png"
+              alt="Gray waves"
+              loading="lazy"
+            />
+            <div class="card__social-media">
+              <a class="card__link" href="#"
+                ><img class="card__icon" src="img/icon1.svg" alt="Facebook"
+              /></a>
+              <a class="card__link" href="#"
+                ><img class="card__icon" src="img/icon2.svg" alt="Twitter"
+              /></a>
+              <a class="card__link" href="#"
+                ><img class="card__icon" src="img/icon3.svg" alt="LinkedIn"
+              /></a>
+              <a class="card__link" href="#"
+                ><img class="card__icon" src="img/icon4.svg" alt="Instagram"
+              /></a>
+            </div>
+          </div>
+          <h3 class="card__title">Ignacio Lang</h3>
+          <p class="card__description">Founder & Lead Mechanic</p>
+        </div>
+        <div class="card"><!--2-->
+          <div class="card__wrapper-image">
+            <img
+              class="card__img"
+              src="img/img2.png"
+              alt="Purple triangles"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="card__title">David Miller</h3>
+          <p class="card__description">Senior Technician</p>
+        </div>
+        <div class="card"><!--3-->
+          <div class="card__wrapper-image">
+            <img
+              class="card__img"
+              src="img/img3.png"
+              alt="Gray waves"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="card__title">Sarah Johnson</h3>
+          <p class="card__description">Customer Service Manager</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
