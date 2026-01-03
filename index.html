@@ -1,34 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My firs site</title>
+    <title>BEM-example</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pontano+Sans:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pontano+Sans:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>Crazy Frog</h1>
+    <!--header-->
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="/img/Frame 1.png" class="logo__img" alt="LOGO" />
+          <span class="logo__text">Ddsgnr</span>
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Treatment</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">About Us</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Contact Us</a>
+            </li>
+          </ul>
+          <div class="menu__btns"> <!-- 2 правые кнопки -->
+            <!-- <li class="menu__item menu__item--border"> -->
+              <a href="#" class="menu__btn">
+                Search
+                <img
+                  src="/img/search-normal.png"
+                  class="menu__item__img"
+                  alt="lupa"
+                />
+              </a>
+            <!-- </li> -->
+            <!-- <li class="menu__item menu__item--accent"> -->
+              <a href="#" class="menu__btn menu__btn--accent"
+                >Book an Appointment
+              </a>
+            <!-- </li> -->
+          </div>
+        </nav>
+      </div>
     </header>
-
-    <main>
-      <p>First string</p>
-      <p>Second string</p>
-      <p>Third string</p>
-      <img src="images/Crazy_Frog.jpg" alt="Crazy Frog" width="200" height="200"/>
-      <p>
-        <a href="https://www.google.com" target="_blank"
-        >Тут можно найти все что угодно про Crazy Frog
-      </a>
-      </p>
-    </main>
-
-    <footer>
-      <ul>
-        <li>Описание</li>
-        <li>О компании</li>
-        <li>Контакты</li>
-      </ul>
-    </footer>
-
+    <!--services-->
+    <div class="services"> 
+      <div class="container services__container">
+        <div class="services__wrapper"><!--left side-->
+          <div class="service"><!--1-->
+            <img
+              class="service__img"
+              src="/img/moon.png"
+              alt="moon"
+            />
+            <h3 class="service__title">Meditation</h3>
+            <p class="service__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros.
+            </p>
+            <button class="service__btn">Learn More ></button>
+          </div>
+          <div class="service"><!--2-->
+            <img
+              class="service__img"
+              src="/img/chart.png"
+              alt="moon"
+            />
+            <h3 class="service__title">Therapy</h3>
+            <p class="service__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros.
+            </p>
+            <button class="service__btn">Learn More ></button>
+          </div>
+          <div class="service"><!--3-->
+            <img
+              class="service__img"
+              src="/img/heart-circle.png"
+              alt="moon"
+            />
+            <h3 class="service__title">Natural Beauty</h3>
+            <p class="service__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros.
+            </p>
+            <button class="service__btn">Learn More ></button>
+          </div>
+          <div class="service"><!--4-->
+            <img
+              class="service__img"
+              src="/img/emoji-happy.png"
+              alt="moon"
+            />
+            <h3 class="service__title">Massages</h3>
+            <p class="service__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros.
+            </p>
+            <button class="service__btn">Learn More ></button>
+          </div>
+        </div>
+        <div class="service__wrapper-image"><!--right side-->
+          <img class="service__image" src="/img/Image.png" alt="" />
+        </div>
+      </div>
+    </div>
   </body>
 </html>
