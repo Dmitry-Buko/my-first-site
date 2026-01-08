@@ -5,41 +5,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="content">
       <div class="buttons">
         <h2 class="buttons__title">Buttons</h2>
+
         <div class="buttons__item">
-          <h2 class="buttons__item-description"></h2>
-          <button class="buttons__button">
-            
-          </button>
+          <h3 class="buttons__item-description">Primary/Primary</h3>
+          <button class="buttons__button">Normal</button>
         </div>
 
-        <div class="buttons__item">
-          <h2 class="buttons__item-description"></h2>
-          <button class="buttons__button">
-
-          </button>
+        <div class="buttons__item buttons__item--secondary">
+          <h3 class="buttons__item-description">Primary/Secondary</h3>
+          <button  class="buttons__button buttons__button--color">Normal</button>
         </div>
 
-        <div class="buttons__item">
-          <h2 class="buttons__item-description"></h2>
-          <button class="buttons__button">
+        <div class="buttons__item buttons__item--simple">
+          <h3 class="buttons__item-description">Simple Buttons</h3>
 
+          <button class="buttons__button_simple">
+            Normal
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.75 12H20.25" stroke="#23BD33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#23BD33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </button>
+
+          <button class="buttons__button_simple">
+            Normal
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.75 12H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
         </div>
       </div>
+
       <div class="form">
         <h2 class="form__title">Form elements</h2>
-        <div class="form__input">
-          <label for="inputField">Input Field</label>
-          <input type="text" name="" id="inputField">
+
+        <div class="form__input-field">
+          <label class="form__label" for="inputField">Input Field</label>
+          <input
+            class="form__input"
+            type="text"
+            name="Input_Field"
+            id="inputField"
+            placeholder="Normal"
+          />
         </div>
-        <div class="form__dropdown">
-          <p class="form__description"></p>
-          
+
+        <div class="form__dropdown-list">
+          <h3 class="form__description">Dropdown Item</h3>
+
+          <div class="form__dropdown-item">
+            <label class="form__dropdown-label" for="defaultItem"
+              >Default Item</label
+            >
+            <select class="form__select" name="Default-Item" id="defaultItem">
+              <option class="form__option" value="normal">Normal</option>
+              <option class="form__option" value="hover">Hover</option>
+              <option class="form__option" value="disable">Disable</option>
+            </select>
+          </div>
+
+          <div class="form__dropdown-item">
+            <label class="form__dropdown-label" for="categoryItem">Category Item</label>
+            <select class="form__select" name="Category-Item" id="categoryItem">
+              <option class="form__option" value="normal">Normal</option>
+              <option class="form__option" value="hover">Hover</option>
+              <option class="form__option" value="disable">Disable</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
