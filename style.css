@@ -33,6 +33,9 @@ body{
 .buttons__item{
     margin-bottom: 40px;
 }
+.buttons__item:last-child{
+    margin-bottom: 0px;
+}
 .buttons__item--secondary{
     margin-bottom: 65px;
 }
@@ -43,6 +46,13 @@ body{
     font-size: 20px;
     line-height: 26px;
     color: rgba(29, 32, 38, 1);
+    margin-bottom: 16px;
+}
+.buttons__item-description--no-margin{
+    margin: 0;
+}
+.form__description{
+    margin-bottom: 16px;
 }
 .buttons__button{
     font-weight: 600;
@@ -68,7 +78,7 @@ body{
     background-color: rgba(69, 63, 202, 1);
     box-shadow: 0px 6px 20px 0px rgba(69, 63, 202, 0.5);
 }
-button[disabled]{
+.buttons__item[disabled]{
     background-color: rgba(255, 221, 209, 1);
     cursor: not-allowed;
 }
@@ -76,7 +86,6 @@ button[disabled]{
     background-color: rgba(205, 203, 254, 1);
     cursor: not-allowed;
 }
-/* нижние кнопки */
 .buttons__item--simple{
     display: flex;
     flex-direction: column;
@@ -85,7 +94,7 @@ button[disabled]{
 }
 .buttons__button_simple{
     position: relative;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     background-color: inherit;
     max-width: 80px;
@@ -99,7 +108,6 @@ button[disabled]{
     cursor: pointer;
     border: none;
 }
-
 .buttons__button_simple::after{
     content: '';
     position: absolute;
@@ -123,15 +131,10 @@ button[disabled]{
 .buttons__button_simple:last-of-type::after{
     background-color: rgba(227, 68, 68, 1);
 }
-
-
-
-
-
-
 .form__input-field{
     display: flex;
     flex-direction: column;
+    margin-bottom: 51px;
 }
 .form__input{
     max-width: 312px;
@@ -139,14 +142,81 @@ button[disabled]{
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+
+    border: 1px solid rgba(233, 234, 240, 1);
+}
+.form__input:hover{
+    outline: 3px solid rgba(255, 221, 209, 1);
+}
+.form__input:active{
+    outline: 1px solid rgba(255, 102, 54, 1);
+}
+.form__input:focus{
+    outline: 1px solid rgba(255, 102, 54, 1);
+}
+.form__input:focus::placeholder{
+    color: rgba(29, 32, 38, 1);
 }
 .form__dropdown-item{
     display: flex;
     flex-direction: column;
 }
 .form .form__dropdown-item:first-of-type{
-    margin-bottom: 90px;
+    margin-bottom: 16px;
 }
 .form__select{
     max-width: 312px;
+}
+.form__label{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.form__dropdown-description{
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.form__select{
+    list-style-type: none;
+}
+.form__option{
+    margin-bottom: 12px;
+}
+.form__option:last-child{
+    margin-bottom: 0;
+}
+.form__button{
+    display: block;
+    width: 100%;
+    padding: 5px 18px;
+    cursor: pointer;
+    text-align: left;
+    border: none;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(78, 85, 102, 1);
+}
+.form__button:not(:disabled):hover{
+    background-color: rgba(255, 238, 232, 1);
+}
+.form__button[disabled]{
+    color: rgba(183, 186, 199, 1);
+}
+.form__button--flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+}
+.form__button--flex:not(:disabled):hover{
+    color: rgba(255, 102, 54, 1);
+}
+.form__button--flex[disabled]{
+    color: rgba(183, 186, 199, 1);
 }
