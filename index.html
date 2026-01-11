@@ -1,34 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
+    <title>Forms</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My firs site</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>Crazy Frog</h1>
-    </header>
+    <div class="body-wrapper">
+      <form class="model">
+          <h3 class="model__title">Фильтры</h3>
 
-    <main>
-      <p>First string</p>
-      <p>Second string</p>
-      <p>Third string</p>
-      <img src="images/Crazy_Frog.jpg" alt="Crazy Frog" width="200" height="200"/>
-      <p>
-        <a href="https://www.google.com" target="_blank"
-        >Тут можно найти все что угодно про Crazy Frog
-      </a>
-      </p>
-    </main>
+          <div class="model__filter">
+            <p class="model__text">показать цену</p>
 
-    <footer>
-      <ul>
-        <li>Описание</li>
-        <li>О компании</li>
-        <li>Контакты</li>
-      </ul>
-    </footer>
+            <div class="model__groups">
+              <div class="model__group">
+                <input
+                  class="model__radio"
+                  type="radio"
+                  id="person"
+                  name="person"
+                />
+                <label class="model__label" for="person">
+                  <div class="model__custom-radio"></div>
+                  на человека
+                </label>
+              </div>
 
+              <div class="model__group">
+                <input
+                  class="model__radio"
+                  type="radio"
+                  id="people"
+                  name="person"
+                />
+                <label class="model__label" for="people">
+                  <div class="model__custom-radio"></div>
+                  на всех
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="model__filter">
+            <p class="model__text">еда</p>
+
+            <div class="model__group model__group_checkbox">
+              <input
+                hidden
+                class="model__checkbox"
+                type="checkbox"
+                id="twoMeals"
+                name="food"
+              />
+              <label class="model__label" for="twoMeals">
+                <div class="model__custom-checkbox">
+                  <svg
+                    width="17"
+                    height="15"
+                    viewBox="0 0 17 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.13057 14.814C6.07023 14.814 6.01094 14.7982 5.95858 14.7683C5.90621 14.7383 5.86259 14.6951 5.83205 14.6431C4.53816 12.4387 1.0903 7.74731 1.05561 7.70017C1.00635 7.63321 0.982827 7.55075 0.989348 7.46788C0.99587 7.38501 1.032 7.30725 1.09113 7.24882L2.15098 6.20153C2.20856 6.14463 2.28426 6.10971 2.36492 6.10284C2.44558 6.09597 2.52609 6.11759 2.59246 6.16394L6.0584 8.5841C8.36268 5.62394 10.5041 3.58104 11.9115 2.37732C13.4891 1.02791 14.4921 0.421555 14.534 0.396285C14.5879 0.363989 14.6494 0.346927 14.7122 0.346924H16.4267C16.4969 0.346912 16.5654 0.368232 16.6232 0.408055C16.681 0.447879 16.7253 0.504326 16.7503 0.569911C16.7753 0.635496 16.7797 0.707122 16.7631 0.775292C16.7464 0.843462 16.7094 0.904956 16.657 0.95162C14.1151 3.21547 11.4725 6.81245 9.70316 9.43121C7.77982 12.2778 6.44464 14.6159 6.43138 14.6392C6.40132 14.6919 6.35792 14.7359 6.30552 14.7665C6.25312 14.7972 6.19358 14.8136 6.13286 14.814L6.13057 14.814Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                2-х разовое питание
+              </label>
+            </div>
+
+            <div class="model__group model__group_checkbox">
+              <input
+                hidden
+                class="model__checkbox"
+                type="checkbox"
+                id="threeMeals"
+                name="food"
+              />
+              <label class="model__label" for="threeMeals">
+                <div class="model__custom-checkbox">
+                  <svg
+                    width="17"
+                    height="15"
+                    viewBox="0 0 17 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.13057 14.814C6.07023 14.814 6.01094 14.7982 5.95858 14.7683C5.90621 14.7383 5.86259 14.6951 5.83205 14.6431C4.53816 12.4387 1.0903 7.74731 1.05561 7.70017C1.00635 7.63321 0.982827 7.55075 0.989348 7.46788C0.99587 7.38501 1.032 7.30725 1.09113 7.24882L2.15098 6.20153C2.20856 6.14463 2.28426 6.10971 2.36492 6.10284C2.44558 6.09597 2.52609 6.11759 2.59246 6.16394L6.0584 8.5841C8.36268 5.62394 10.5041 3.58104 11.9115 2.37732C13.4891 1.02791 14.4921 0.421555 14.534 0.396285C14.5879 0.363989 14.6494 0.346927 14.7122 0.346924H16.4267C16.4969 0.346912 16.5654 0.368232 16.6232 0.408055C16.681 0.447879 16.7253 0.504326 16.7503 0.569911C16.7753 0.635496 16.7797 0.707122 16.7631 0.775292C16.7464 0.843462 16.7094 0.904956 16.657 0.95162C14.1151 3.21547 11.4725 6.81245 9.70316 9.43121C7.77982 12.2778 6.44464 14.6159 6.43138 14.6392C6.40132 14.6919 6.35792 14.7359 6.30552 14.7665C6.25312 14.7972 6.19358 14.8136 6.13286 14.814L6.13057 14.814Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                3-разовое питание
+              </label>
+            </div>
+
+            <div class="model__group model__group_checkbox">
+              <input
+                hidden
+                class="model__checkbox"
+                type="checkbox"
+                id="allMeals"
+                name="food"
+              />
+              <label class="model__label" for="allMeals">
+                <div class="model__custom-checkbox">
+                  <svg
+                    width="17"
+                    height="15"
+                    viewBox="0 0 17 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.13057 14.814C6.07023 14.814 6.01094 14.7982 5.95858 14.7683C5.90621 14.7383 5.86259 14.6951 5.83205 14.6431C4.53816 12.4387 1.0903 7.74731 1.05561 7.70017C1.00635 7.63321 0.982827 7.55075 0.989348 7.46788C0.99587 7.38501 1.032 7.30725 1.09113 7.24882L2.15098 6.20153C2.20856 6.14463 2.28426 6.10971 2.36492 6.10284C2.44558 6.09597 2.52609 6.11759 2.59246 6.16394L6.0584 8.5841C8.36268 5.62394 10.5041 3.58104 11.9115 2.37732C13.4891 1.02791 14.4921 0.421555 14.534 0.396285C14.5879 0.363989 14.6494 0.346927 14.7122 0.346924H16.4267C16.4969 0.346912 16.5654 0.368232 16.6232 0.408055C16.681 0.447879 16.7253 0.504326 16.7503 0.569911C16.7753 0.635496 16.7797 0.707122 16.7631 0.775292C16.7464 0.843462 16.7094 0.904956 16.657 0.95162C14.1151 3.21547 11.4725 6.81245 9.70316 9.43121C7.77982 12.2778 6.44464 14.6159 6.43138 14.6392C6.40132 14.6919 6.35792 14.7359 6.30552 14.7665C6.25312 14.7972 6.19358 14.8136 6.13286 14.814L6.13057 14.814Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                Все включено
+              </label>
+            </div>
+
+            <div class="model__group model__group_checkbox">
+              <input
+                hidden
+                class="model__checkbox"
+                type="checkbox"
+                id="noMeals"
+                name="food"
+              />
+              <label class="model__label" for="noMeals">
+                <div class="model__custom-checkbox">
+                  <svg
+                    width="17"
+                    height="15"
+                    viewBox="0 0 17 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.13057 14.814C6.07023 14.814 6.01094 14.7982 5.95858 14.7683C5.90621 14.7383 5.86259 14.6951 5.83205 14.6431C4.53816 12.4387 1.0903 7.74731 1.05561 7.70017C1.00635 7.63321 0.982827 7.55075 0.989348 7.46788C0.99587 7.38501 1.032 7.30725 1.09113 7.24882L2.15098 6.20153C2.20856 6.14463 2.28426 6.10971 2.36492 6.10284C2.44558 6.09597 2.52609 6.11759 2.59246 6.16394L6.0584 8.5841C8.36268 5.62394 10.5041 3.58104 11.9115 2.37732C13.4891 1.02791 14.4921 0.421555 14.534 0.396285C14.5879 0.363989 14.6494 0.346927 14.7122 0.346924H16.4267C16.4969 0.346912 16.5654 0.368232 16.6232 0.408055C16.681 0.447879 16.7253 0.504326 16.7503 0.569911C16.7753 0.635496 16.7797 0.707122 16.7631 0.775292C16.7464 0.843462 16.7094 0.904956 16.657 0.95162C14.1151 3.21547 11.4725 6.81245 9.70316 9.43121C7.77982 12.2778 6.44464 14.6159 6.43138 14.6392C6.40132 14.6919 6.35792 14.7359 6.30552 14.7665C6.25312 14.7972 6.19358 14.8136 6.13286 14.814L6.13057 14.814Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                Без еды
+              </label>
+            </div>
+
+            <div class="model__group model__group_checkbox">
+              <input
+                hidden
+                class="model__checkbox"
+                type="checkbox"
+                id="breakfastMeals"
+                name="food"
+              />
+              <label class="model__label" for="breakfastMeals">
+                <div class="model__custom-checkbox">
+                  <svg
+                    width="17"
+                    height="15"
+                    viewBox="0 0 17 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.13057 14.814C6.07023 14.814 6.01094 14.7982 5.95858 14.7683C5.90621 14.7383 5.86259 14.6951 5.83205 14.6431C4.53816 12.4387 1.0903 7.74731 1.05561 7.70017C1.00635 7.63321 0.982827 7.55075 0.989348 7.46788C0.99587 7.38501 1.032 7.30725 1.09113 7.24882L2.15098 6.20153C2.20856 6.14463 2.28426 6.10971 2.36492 6.10284C2.44558 6.09597 2.52609 6.11759 2.59246 6.16394L6.0584 8.5841C8.36268 5.62394 10.5041 3.58104 11.9115 2.37732C13.4891 1.02791 14.4921 0.421555 14.534 0.396285C14.5879 0.363989 14.6494 0.346927 14.7122 0.346924H16.4267C16.4969 0.346912 16.5654 0.368232 16.6232 0.408055C16.681 0.447879 16.7253 0.504326 16.7503 0.569911C16.7753 0.635496 16.7797 0.707122 16.7631 0.775292C16.7464 0.843462 16.7094 0.904956 16.657 0.95162C14.1151 3.21547 11.4725 6.81245 9.70316 9.43121C7.77982 12.2778 6.44464 14.6159 6.43138 14.6392C6.40132 14.6919 6.35792 14.7359 6.30552 14.7665C6.25312 14.7972 6.19358 14.8136 6.13286 14.814L6.13057 14.814Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                Завтраки
+              </label>
+            </div>
+          </div>
+      </form>
+      <form class="review">
+          <h3 class="review__title">будем рады вашему отзыву</h3>
+          <div class="review__groups">
+            <div class="review__group">
+              <label class="review__label" for="nameSurname">Имя и Фамилия</label>
+              <input
+                id="nameSurname"
+                class="review__input"
+                type="text"
+                placeholder="Александрa Иванова"
+              />
+            </div>
+
+            <div class="review__group">
+              <label class="review__label" for="city">Откуда вы</label>
+              <input
+                class="review__input"
+                type="text"
+                placeholder="Москва"
+                id="city"
+              />
+            </div>
+
+            <div class="review__group">
+              <label class="review__label" for="flightDate"
+                >Когда летали (дата)</label
+              >
+              <input
+                class="review__input"
+                type="text"
+                placeholder="10.10.23"
+                id="flightDate"
+              />
+            </div>
+
+            <div class="review__group">
+              <label class="review__label" for="flightLocation"
+                >Куда летали (страна и отель)</label
+              >
+              <input
+                class="review__input"
+                type="text"
+                placeholder="Бали, Hanging Gardens "
+                id="flightLocation"
+              />
+            </div>
+          </div>
+          <div class="review__group review__group_textarea">
+            <label class="review__label" for="feedback">Напишите отзыв</label>
+            <textarea
+              class="review__textarea"
+              name="feedback"
+              id="feedback"
+              placeholder="Текст"
+            ></textarea>
+          </div>
+          <button type="button" class="review__button">отправить</button>
+      </form>
+    </div>
   </body>
 </html>
