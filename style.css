@@ -15,6 +15,7 @@ body{
 .model{
     flex-grow: 1;
     max-width: 480px;
+    padding: 34px 32px;
 }
 .model__title{
     font-size: 24px;
@@ -29,18 +30,25 @@ body{
     margin-bottom: 21px;
     text-transform: uppercase;
 }
-.model__filters{
+/* .model__filters{
     padding: 34px 32px;
-}
+    перенесено в model
+} */
 .model__filter{
     margin-bottom: 30px;
+}
+.model__filter:last-child{
+    margin-bottom: 0px;
 }
 .model__groups{
     display: flex;
     gap: 35px;
 }
-.model__group_margin{
+.model__group_checkbox{
     margin-bottom: 13px;
+}
+.model__group_checkbox:last-child{
+    margin-bottom: 0px;
 }
 .model__custom-radio {
     display: flex;
@@ -116,56 +124,59 @@ input[type="radio"] {
 
 /* === RIGHT SIDE === */
 
-.form{
+.review{
     max-width: 544px;
     flex-grow: 1;
-}
-.form__wrapper{
     padding: 52px 40px;
 }
-.form__title{
+/* .form__wrapper{
+    padding: 52px 40px; 
+    перенесено в form
+} */
+.review__title{
     max-width: 244px;
     margin: 0 auto 24px;
     text-align: center;
     font-weight: 400;
     font-size: 23px;
-    line-height: 23px;
+    line-height: 26px;
     text-transform: uppercase;
     color: rgba(28, 28, 28, 1);
 }
-.form__groups{
+.review__groups{
     display: grid;
     grid-template-columns: repeat(2, minmax(226px, 1fr));
     grid-template-rows: repeat(2, minmax(60px, 1fr));
     gap: 12px;
     margin-bottom: 26px;
 }
-.form__group{
-    display: flex;
-    flex-direction: column;
+.review__group{
+    display: grid;
+    /* flex-direction: column; 
+    изменил flex => grid*/
 }
-.form__label{
+.review__label{
     font-weight: 400;
     font-size: 14px;
     line-height: 14px;
     color: rgba(88, 88, 88, 1);
     margin: 0 0 4px 26px;
 }
-.form__input{
-    height: 40px;
+.review__input{
+    /* height: 40px; */
     border: 1px solid rgba(212, 212, 212, 1);
     border-radius: 30px;
-    padding-left: 26px;
+    padding: 9px 0 9px 26px;
     font-weight: 300;
     font-size: 16px;
     line-height: 16px;
     color: rgba(161, 161, 161, 1);
 }
-.form__textarea{
+.review__textarea{
     padding: 20.55px 26px;
-    margin-bottom: 24px;
-    width: 464px;
-    height: 200px;
+
+    width: 100%;
+    min-height: 200px;
     resize: none;
     border: 1px solid rgba(212, 212, 212, 1);
     border-radius: 30px;
@@ -173,7 +184,7 @@ input[type="radio"] {
     line-height: 16px;
     font-weight: 300;
 }
-.form__button{
+.review__button{
     display: block;
     margin: 0 auto;
     padding: 10.5px 0;
@@ -188,7 +199,9 @@ input[type="radio"] {
     text-transform: uppercase;
     color: rgba(255, 255, 255, 1);
 }
-.form__reviev{
-    display: flex;
-    flex-direction: column;
+.review__group_textarea{
+    display: grid;
+    /* flex-direction: column;
+    change flex => grid */
+    margin-bottom: 24px;
 }

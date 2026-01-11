@@ -15,7 +15,6 @@
   <body>
     <div class="body-wrapper">
       <form class="model">
-        <div class="model__filters">
           <h3 class="model__title">Фильтры</h3>
 
           <div class="model__filter">
@@ -53,7 +52,7 @@
           <div class="model__filter">
             <p class="model__text">еда</p>
 
-            <div class="model__group model__group_margin">
+            <div class="model__group model__group_checkbox">
               <input
                 hidden
                 class="model__checkbox"
@@ -80,7 +79,7 @@
               </label>
             </div>
 
-            <div class="model__group model__group_margin">
+            <div class="model__group model__group_checkbox">
               <input
                 hidden
                 class="model__checkbox"
@@ -107,7 +106,7 @@
               </label>
             </div>
 
-            <div class="model__group model__group_margin">
+            <div class="model__group model__group_checkbox">
               <input
                 hidden
                 class="model__checkbox"
@@ -134,7 +133,7 @@
               </label>
             </div>
 
-            <div class="model__group model__group_margin">
+            <div class="model__group model__group_checkbox">
               <input
                 hidden
                 class="model__checkbox"
@@ -161,7 +160,7 @@
               </label>
             </div>
 
-            <div class="model__group model__group_margin">
+            <div class="model__group model__group_checkbox">
               <input
                 hidden
                 class="model__checkbox"
@@ -188,67 +187,64 @@
               </label>
             </div>
           </div>
-        </div>
       </form>
-      <form class="form">
-        <div class="form__wrapper">
-          <h3 class="form__title">будем рады вашему отзыву</h3>
-          <div class="form__groups">
-            <div class="form__group">
-              <label class="form__label" for="nameSurname">Имя и Фамилия</label>
+      <form class="review">
+          <h3 class="review__title">будем рады вашему отзыву</h3>
+          <div class="review__groups">
+            <div class="review__group">
+              <label class="review__label" for="nameSurname">Имя и Фамилия</label>
               <input
                 id="nameSurname"
-                class="form__input"
+                class="review__input"
                 type="text"
                 placeholder="Александрa Иванова"
               />
             </div>
 
-            <div class="form__group">
-              <label class="form__label" for="city">Откуда вы</label>
+            <div class="review__group">
+              <label class="review__label" for="city">Откуда вы</label>
               <input
-                class="form__input"
+                class="review__input"
                 type="text"
                 placeholder="Москва"
                 id="city"
               />
             </div>
 
-            <div class="form__group">
-              <label class="form__label" for="flightDate"
+            <div class="review__group">
+              <label class="review__label" for="flightDate"
                 >Когда летали (дата)</label
               >
               <input
-                class="form__input"
+                class="review__input"
                 type="text"
                 placeholder="10.10.23"
                 id="flightDate"
               />
             </div>
 
-            <div class="form__group">
-              <label class="form__label" for="flightLocation"
+            <div class="review__group">
+              <label class="review__label" for="flightLocation"
                 >Куда летали (страна и отель)</label
               >
               <input
-                class="form__input"
+                class="review__input"
                 type="text"
                 placeholder="Бали, Hanging Gardens "
                 id="flightLocation"
               />
             </div>
           </div>
-          <div class="form__reviev">
-            <label class="form__label" for="feedback">Напишите отзыв</label>
+          <div class="review__group review__group_textarea">
+            <label class="review__label" for="feedback">Напишите отзыв</label>
             <textarea
-              class="form__textarea"
+              class="review__textarea"
               name="feedback"
               id="feedback"
               placeholder="Текст"
             ></textarea>
           </div>
-          <button type="button" class="form__button">отправить</button>
-        </div>
+          <button type="button" class="review__button">отправить</button>
       </form>
     </div>
   </body>
