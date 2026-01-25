@@ -1,9 +1,8 @@
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".cards__swiper", {
   loop: true,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
-    dynamicBullets: true,
     clickable: true,
   },
   navigation: {
