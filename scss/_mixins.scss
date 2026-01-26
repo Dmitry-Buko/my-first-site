@@ -1,0 +1,18 @@
+@mixin width ($width: 100px){
+  width: $width;
+}
+@mixin height ($height: 50px){
+  height: $height;
+}
+
+$breakpoints: (
+  tablet: 768px,
+  desktop: 1025px,
+);
+@mixin respond ($breakpoint){
+  @if map-has-key($map: $breakpoints, $key: $breakpoint){
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content
+    }
+  }
+}

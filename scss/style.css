@@ -1,0 +1,25 @@
+body {
+  background-color: #2a5a13;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  width: 100%;
+  padding: 0 15px;
+}
+@media (min-width: 768px) {
+  body {
+    width: 783px;
+  }
+}
+@media (min-width: 1025px) {
+  body {
+    width: 1039px;
+  }
+}
+
+.element {
+  margin: 0 auto;
+  padding-top: 10px;
+  background-color: #0916cc;
+  width: 200px;
+  height: 100px;
+}/*# sourceMappingURL=style.css.map */
