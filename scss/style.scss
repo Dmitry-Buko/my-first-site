@@ -7,7 +7,7 @@ body {
 }
 .subscribe {
   position: relative;
-  background-color: #00000071;
+  background-color: #00000071;/*для фона, если картинка не прогрузится*/
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0.49)),
     url(/img/background_sneakers.jpg);
@@ -65,6 +65,7 @@ body {
 .subscribe__form {
   display: flex;
   width: 100%;
+  max-height: 48px;
   max-width: 650px;
   margin: 0 auto;
   @include screen(desktop) {

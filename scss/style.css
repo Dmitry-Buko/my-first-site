@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -12,7 +13,7 @@ body {
 
 .subscribe {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.4431372549);
+  background-color: rgba(0, 0, 0, 0.4431372549); /*для фона, если картинка не прогрузится*/
   background-image: linear-gradient(rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0.49)), url(/img/background_sneakers.jpg);
   background-position: center;
   background-size: 170%;
@@ -100,6 +101,7 @@ body {
 .subscribe__form {
   display: flex;
   width: 100%;
+  max-height: 48px;
   max-width: 650px;
   margin: 0 auto;
 }
