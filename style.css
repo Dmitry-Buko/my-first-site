@@ -102,3 +102,7 @@ body {
   background-color: rgba(255, 255, 255, 0.75);
   transition: transform .2s, left .2s;
 }
+.cards .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  width: 31px;
+  border-radius: 48px;
+}
