@@ -1,34 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My firs site</title>
+    <meta charset="utf-8" />
+    <title>Swiper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>Crazy Frog</h1>
-    </header>
-
-    <main>
-      <p>First string</p>
-      <p>Second string</p>
-      <p>Third string</p>
-      <img src="images/Crazy_Frog.jpg" alt="Crazy Frog" width="200" height="200"/>
-      <p>
-        <a href="https://www.google.com" target="_blank"
-        >Тут можно найти все что угодно про Crazy Frog
-      </a>
-      </p>
-    </main>
-
-    <footer>
-      <ul>
-        <li>Описание</li>
-        <li>О компании</li>
-        <li>Контакты</li>
-      </ul>
-    </footer>
-
+    <div class="cards">
+      <div class="container">
+        <div class="swiper cards__swiper">
+          <div class="swiper-wrapper cards__swiper-wrapper">
+            <div class="swiper-slide card">
+              <div class="card__wrapper-image">
+                <img src="img/flover.png" alt="flover" class="card__image" />
+              </div>
+              <div class="card__description">
+                <h3 class="card__title">
+                  We Have Small And Best O2 Plants Collection’s
+                </h3>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </p>
+                <button class="card__btn">Explore</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card__wrapper-image">
+                <img src="img/flover1.png" alt="flover" class="card__image" />
+              </div>
+              <div class="card__description">
+                <h3 class="card__title">
+                  We Have Small And Best O2 Plants Collection’s
+                </h3>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </p>
+                <button class="card__btn">Explore</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card__wrapper-image">
+                <img src="img/flover2.png" alt="flover" class="card__image" />
+              </div>
+              <div class="card__description">
+                <h3 class="card__title">
+                  We Have Small And Best O2 Plants Collection’s
+                </h3>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </p>
+                <button class="card__btn">Explore</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
