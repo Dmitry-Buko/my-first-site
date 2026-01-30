@@ -6,41 +6,34 @@ body {
   color: $text;
 }
 .subscribe {
-  position: relative;
-  background-color: #00000071;/*для фона, если картинка не прогрузится*/
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0.49)),
     url(/img/background_sneakers.jpg);
   background-position: center;
   background-size: 170%;
+  padding: 64px 0;
   @include screen(tablet) {
     background-size: 100%;
     background-position: center;
+    padding: 42px 0;
+  }
+  @include screen(desktop) {
+    padding: 115.5px 0;
   }
 }
 .subscribe__container {
-  width: 100%;
-  padding: 72px 35px 71px;
-  @include screen(tablet) {
-    padding: 50px 71px 49px;
-  }
+  padding: 0 35px;
   @include screen(desktop) {
-    padding: 123.5px 395.47px;
+    padding: 0 395.47px;
   }
-}
-.subscribe__content{
-  max-width: 959.06px;
-  margin: 0 auto;
-}
-.subscribe__description {
-  margin-bottom: 24px;
 }
 .subscribe__title {
   @include font(30px, 36px, 600);
   font-style: italic;
   font-family: $font-secondary;
+  max-width: 959.06px;
   text-align: center;
-  margin-bottom: 8px;
+  margin: 0 auto 24px;
   @include screen(tablet) {
     @include font(48px, 48px, 600);
   }
@@ -52,8 +45,8 @@ body {
   @include font(14px, 16px, 400);
   font-family: $font-primary;
   text-align: center;
-  max-width: 380px;
-  margin: 0 auto;
+  max-width: 380.09px;
+  margin: 0 auto 24px;
   @include screen(tablet) {
     @include font(18px, 28px, 400);
   }
@@ -65,17 +58,18 @@ body {
 .subscribe__form {
   display: flex;
   width: 100%;
-  max-height: 48px;
-  max-width: 650px;
+  max-width: 698px;
   margin: 0 auto;
   @include screen(desktop) {
     max-width: 653px;
   }
 }
 .subscribe__input {
+  @include font(12px, 16px, 500);
+  color: $color-background;
   font-family: $font-primary;
   flex: 1;
-  padding: 16px 12px;
+  padding: 14px 12px;
   border: 1px solid rgba(231, 231, 231, 1);
   @include screen(tablet) {
     padding: 12px;
@@ -92,11 +86,12 @@ body {
   @include font(14px, 16px, 600);
   font-family: $font-primary;
   color: $text;
-  background-color: $color-bacground;
+  background-color: $color-background;
   display: flex;
   align-items: center;
   gap: 6px;
   padding: 16px;
+  text-transform: uppercase;
   border: none;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.12);
   @include screen(tablet) {
