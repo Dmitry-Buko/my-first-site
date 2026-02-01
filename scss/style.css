@@ -19,11 +19,10 @@ body {
 @media (min-width: 768px) {
   .subscribe {
     background-size: 100%;
-    background-position: center;
     padding: 42px 0;
   }
 }
-@media (min-width: 1750px) {
+@media (min-width: 1025px) {
   .subscribe {
     padding: 115.5px 0;
   }
@@ -32,9 +31,10 @@ body {
 .subscribe__container {
   padding: 0 35px;
 }
-@media (min-width: 1750px) {
+@media (min-width: 1025px) {
   .subscribe__container {
-    padding: 0 395.47px;
+    max-width: 1030px;
+    margin: 0 auto;
   }
 }
 
@@ -55,7 +55,7 @@ body {
     font-weight: 600;
   }
 }
-@media (min-width: 1750px) {
+@media (min-width: 1025px) {
   .subscribe__title {
     font-size: 60px;
     line-height: 60px;
@@ -79,7 +79,7 @@ body {
     font-weight: 400;
   }
 }
-@media (min-width: 1750px) {
+@media (min-width: 1025px) {
   .subscribe__text {
     font-size: 24px;
     line-height: 32px;
@@ -94,7 +94,7 @@ body {
   max-width: 698px;
   margin: 0 auto;
 }
-@media (min-width: 1750px) {
+@media (min-width: 1025px) {
   .subscribe__form {
     max-width: 653px;
   }
@@ -163,6 +163,6 @@ body {
     line-height: 28px;
     font-weight: 600;
     padding: 10px 16px;
-    width: 126px;
+    min-width: 126px;
   }
 }/*# sourceMappingURL=style.css.map */

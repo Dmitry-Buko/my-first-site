@@ -14,7 +14,6 @@ body {
   padding: 64px 0;
   @include screen(tablet) {
     background-size: 100%;
-    background-position: center;
     padding: 42px 0;
   }
   @include screen(desktop) {
@@ -24,7 +23,9 @@ body {
 .subscribe__container {
   padding: 0 35px;
   @include screen(desktop) {
-    padding: 0 395.47px;
+    // padding: 0 395.47px;
+    max-width: 1030px;
+    margin: 0 auto;
   }
 }
 .subscribe__title {
@@ -97,6 +98,6 @@ body {
   @include screen(tablet) {
     @include font(18px, 28px, 600);
     padding: 10px 16px;
-    width: 126px;
+    min-width: 126px;
   }
 }
